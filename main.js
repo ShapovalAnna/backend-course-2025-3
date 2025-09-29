@@ -3,7 +3,7 @@ const { program } = require("commander");
 const fs = require("fs");
 
 program
-  .requiredOption("-i, --input <path>", "input JSON file")
+  .option("-i, --input <path>", "input JSON file")
   .option("-o, --output <path>", "output file")
   .option("-d, --display", "display results in console")
   .option("-s, --survived", "only show survived passengers")
